@@ -1,6 +1,13 @@
-language: node_js
-node_js:
-  - "14"
+# .travis.yml
+
+language: python
+python:
+  - "3.8"  # Puedes especificar la versión de Python que prefieras
+
+# Instalar dependencias (en este caso, no hay dependencias adicionales)
+install:
+  - pip install -r requirements.txt || true
+
+# Ejecutar pruebas
 script:
-  - npm install
-  - npm test
+  - python -m unittest discover
