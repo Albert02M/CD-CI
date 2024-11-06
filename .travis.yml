@@ -2,9 +2,9 @@
 
 language: python
 python:
-  - "3.8"  # Puedes especificar la versión de Python que prefieras
+  - "3.12"  # Puedes especificar la versión de Python que prefieras
 
-# Instalar dependencias (en este caso, no hay dependencias adicionales)
+# Instalar dependencias si las tienes
 install:
   - pip install -r requirements.txt || true
 
